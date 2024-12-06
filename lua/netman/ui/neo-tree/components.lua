@@ -79,7 +79,7 @@ M.icon = function(config, node, state)
 	elseif entry.icon then
 		_icon.text = string.format("%s ", entry.icon)
 	elseif node.type == "netman_host" then
-		_icon.text, _icon.highlight = icon_map(entry.os)
+		_icon.text, _icon.highlight = icon_map(entry.os, "")
 		-- Use this as a place to have the OS icon?
 	end
 	_icon.highlight = entry.highlight or _icon.highlight
